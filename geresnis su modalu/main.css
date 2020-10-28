@@ -1,0 +1,136 @@
+.container {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+
+.container h1 {
+  color: lightcoral;
+  margin: 30px auto;
+}
+
+.container #enterData,
+.container #resetData {
+  background-color: lightblue;
+  padding: 10px;
+  margin: 30px;
+  border-radius: 20px;
+}
+
+.container table {
+  margin: 50px auto;
+  text-align: center;
+  border: 2px red solid;
+  border-collapse: collapse;
+  border-right: none;
+  border-bottom: none;
+}
+
+.container table th {
+  background-color: lightgreen;
+  border: 2px red solid;
+  border-collapse: collapse;
+  padding: 5px 15px;
+}
+
+.container table .th_none {
+  display: none;
+}
+
+.container table td {
+  border: 2px red solid;
+  border-collapse: collapse;
+  padding: 5px 15px;
+}
+
+.modal_background, .modal_background1 {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.modal_background.modal-active, .modal_background1.modal-active {
+  z-index: 1;
+  opacity: 1;
+}
+
+.modal_background .modal_content, .modal_background .modal_content1, .modal_background1 .modal_content, .modal_background1 .modal_content1 {
+  padding: 20px;
+  background: #fff;
+  max-width: 380px;
+  text-align: center;
+  margin: 60px auto;
+  -webkit-box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+          box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+}
+
+.modal_background .modal_content h2, .modal_background .modal_content1 h2, .modal_background1 .modal_content h2, .modal_background1 .modal_content1 h2 {
+  color: lightcoral;
+}
+
+.modal_background .modal_content button, .modal_background .modal_content1 button, .modal_background1 .modal_content button, .modal_background1 .modal_content1 button {
+  background-color: lightblue;
+  padding: 5px 20px;
+  margin: 30px;
+  border-radius: 10px;
+}
+
+.edit,
+.delete,
+.patvirtini_trinima,
+.btn-secondary,
+.button2 {
+  background-color: lightblue;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
+.modalo_fonas {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.4);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.modalo_fonas.modalas-aktyvus {
+  z-index: 1;
+  opacity: 1;
+}
+
+.modalo_fonas .vidinis_modalas {
+  padding: 20px;
+  background: #fff;
+  max-width: 380px;
+  text-align: center;
+  margin: 60px auto;
+  -webkit-box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+          box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+}
+
+.span_close {
+  color: grey;
+  float: right;
+  font-size: 30px;
+  color: grey;
+}
+
+.span_close:hover,
+.span_close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */

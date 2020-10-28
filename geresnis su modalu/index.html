@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Modal</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Table</h1>
+        <button id="enterData" class="enterData">Enter your data</button>
+        <button type="reset" id="resetData" class="resetData">Reset your table</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Numeris</th>
+                    <th>Kelias</th>
+                    <th>Laikas</th>
+                    <th class="th_none"></th>
+                    <th class="th_none"></th>
+                </tr>
+            </thead>
+            <tbody id="tBody"></tbody>
+        </table>
+    </div>
+
+    <div class="modal_background" id="duomenu_modalas">
+        <div class="modal_content">
+            <span class="span_close">&times;</span>
+            <h2>Enter your data</h2>
+            <label for="date">Data:</label>
+            <input autocomplete="off" type="text" id="date" name="date" onfocus="this.value=''"><br><br>
+            <label for="number">Numeris:</label>
+            <input autocomplete="off" type="text" id="number" name="number" onfocus="this.value=''"><br><br>
+            <label for="distance">Kelias:</label>
+            <input autocomplete="off" type="text" id="distance" name="distance" onfocus="this.value=''"><br><br>
+            <label for="time">Laikas:</label>
+            <input autocomplete="off" type="text" id="time" name="time" onfocus="this.value=''"><br><br>
+            <button id="main_modal_mygtukas" class="enterClose">Enter</button>
+        </div>
+    </div>
+
+    <div class="modalo_fonas" id="trinti_modalas">
+        <div class="vidinis_modalas">
+            <span class="span_close">&times;</span>
+            <h2 class="mb-5">Ar tikrai norite trinti eilute?</h2>
+            <button id="deleteRow" class="patvirtini_trinima">Taip</button>
+            <button class="button2">Ne</button>
+        </div>
+    </div>
+
+    <div class="modal_background1" id="duomenu_modalas1">
+        <div class="modal_content1">
+            <span class="span_close">&times;</span>
+            <h2>Enter your data</h2>
+            <label for="date">Data:</label>
+            <input type="text" id="date1" name="date"><br><br>
+            <label for="number">Numeris:</label>
+            <input type="text" id="number1" name="number"><br><br>
+            <label for="distance">Kelias:</label>
+            <input type="text" id="distance1" name="distance"><br><br>
+            <label for="time">Laikas:</label>
+            <input type="text" id="time1" name="time"><br><br>
+            <button id="main_modal_mygtukas1" class="enterClose1"></button>
+
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+
+
+
+</body>
+
+</html>
