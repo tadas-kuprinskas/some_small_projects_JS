@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <footer>
+        <button class="task_button" id="new_task">Create</button>
+        <div class="footer_div">
+            <p>Drop here to delete--></p>
+            <img class="inner_slot trashbin" src="dist/img/trashbin.png" alt="trashbin">
+        </div>
+    </footer>
+    <div class="slots">
+        <div class="slot slot1">
+            <div class="inner_slot inner_slot1">
+                <h4>Tasks to do</h4>
+                <div id="somerandomid" class="task" draggable="true"><p> To tidy my room </p><button class="btnEdit">Edit</button><button class="btnDelete">Delete</button></div>
+                <div id="somerandomid1" class="task" draggable="true"><p>To wash dishes</p><button class="btnEdit">Edit</button><button class="btnDelete">Delete</button></div>
+                <div id="somerandomid2" class="task" draggable="true"><p>To take my dog for a walk</p><button class="btnEdit">Edit</button><button class="btnDelete">Delete</button></div>
+            </div>
+        </div>
+        <div class="slot slot2">
+            <div class="inner_slot inner_slot2">
+                <h4>Tasks being done</h4>
+            </div>
+        </div>
+        <div class="slot slot3">
+            <div class="inner_slot inner_slot3">
+                <h4>Tasks done</h4>
+            </div>
+        </div>
+        <div class="slot slot4">
+            <div class="inner_slot inner_slot4">
+                <h4>Tasks to be done tomorrow</h4>
+            </div>
+        </div>
+        <div class="modal_overlay" id="data_modal">
+            <div class="modal">
+                <span class="close_span">&times;</span>
+                <form id="data_form" action="" autocomplete="off">
+                    <div class="input_box">
+                        <label for="">Task</label>
+                        <input id="task" type="text">
+                    </div>
+                    <button id="main_modal_mygtukas" class="main_modal_mygtukas">Add</button>
+                </form>
+            </div>
+        </div>
+        <div class="modal_overlay1" id="data_modal1">
+            <div class="modal1">
+                <span class="close_span">&times;</span>
+                <form id="data_form1" action="" autocomplete="off">
+                    <div class="input_box1">
+                        <label for="">Task</label>
+                        <input id="task1" type="text">
+                    </div>
+                    <button id="main_modal_mygtukas1" class="main_modal_mygtukas1">Edit and enter</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
