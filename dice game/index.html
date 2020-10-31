@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Dicee</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Enter your names and play!</h1>
+    <div class="wrap">
+      <div class="buttons">
+        <button class="names">Enter your names🧑</button>
+        <button class='playBtn'>Press to play🎲</button>
+      </div>
+      <div class="wrap1">
+        <div class="dice">
+          <p class="player1">Player 1</p>
+          <img class="img1" src="images/dice6.png">
+        </div>
+
+        <div class="dice">
+          <p class="player2">Player 2</p>
+          <img class="img2" src="images/dice6.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="modal_overlay" id="name_modal">
+      <div class="modal">
+        <span class="span_close">&times;</span>
+        <form id="data_form" autocomplete="off">
+          <h3>Player 1</h3>
+          <div>
+            <label>Name</label>
+            <input class="task" type="text">
+          </div>
+          <button id="main_modal_button" class="main_modal_button">Enter</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal_overlay1" id="name_modal1">
+      <div class="modal1">
+        <span class="span_close">&times;</span>
+        <form id="data_form1" autocomplete="off">
+          <h3>Player 2</h3>
+          <div>
+            <label >Name</label>
+            <input class="task1" type="text">
+          </div>
+          <button id="main_modal_button1" class="main_modal_button1">Enter</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+<footer>
+</footer>
+
+</html>
